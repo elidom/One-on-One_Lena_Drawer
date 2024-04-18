@@ -3,7 +3,7 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Specify the minimum number of rows needed for sampling:
 # e.g., to be able to sample 20% a minimum of 5 rows is needed (1 sample = 20%) #
-n <- 5
+n <- 20
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 # libraries ---------------------------------------------------------------
