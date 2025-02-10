@@ -1,9 +1,11 @@
+#This script was Written by Marcos Dominguez Arriola
+
 ## app.R ##
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Specify the minimum number of rows needed for sampling:
-# e.g., to be able to sample 20% a minimum of 5 rows is needed (1 sample = 20%) #
-n <- 20
+# e.g., to be able to sample 15% a minimum of 7 rows is needed #
+n <- 7
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 # libraries ---------------------------------------------------------------
@@ -41,6 +43,9 @@ ui <- dashboardPage(
       
     ), #close sidebar menu
     
+    h3(textOutput("results"), style="color:red"),
+    
+    h4(textOutput("n_sampled")),
     
     selectInput(
       inputId = "select_child",
@@ -75,11 +80,9 @@ ui <- dashboardPage(
     actionButton(
       inputId = "action",
       label = "Sample!"
-    ),
+    )
     
-    h3(textOutput("results"), style="color:red"),
-    
-    h4(textOutput("n_sampled"))
+   
     
   ), #close sidebar
   
