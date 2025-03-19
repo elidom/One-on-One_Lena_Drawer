@@ -17,7 +17,7 @@ library(readxl)
 library(shinyWidgets)
 
 
-df <- read_xlsx("LENAfiltered_all_coded_master.xlsx") %>% 
+df <- read_xlsx("LENAfiltered_all_coded_master_v0.2.xlsx") %>% 
   mutate(child_id = factor(paste("ch_", child_id, sep = "")),
          lang = factor(lang),
          spkr = factor(spkr),
